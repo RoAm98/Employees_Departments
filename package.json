@@ -1,0 +1,19 @@
+{
+  "name": "Node_DepEmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "mime": "^2.5.2",
+    "mysql": "^2.18.1"
+  }
+}

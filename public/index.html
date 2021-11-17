@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Departments</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="add">Add</a></li>
+        <li><a class="dropdown-item" href="list">List</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Employees</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="empadd">Add</a></li>
+        <li><a class="dropdown-item" href="emplist">List</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="container mt-4">
+
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="add">ADD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/list">LIST</a>
+      </li>
+    </ul>
+    <form method="POST" action="/save" id="form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Department Name</label>
+        <input type="text" class="form-control" name="name" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="age" class="form-label">Director</label>
+        <input type="text" class="form-control" name="director" id="director" required>
+      </div>
+      <div class="mb-3">
+        <label for="weight" class="form-label">Annual Budget</label>
+        <input type="number" step="0.1" class="form-control" name="annbud" id="annbud" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="/js/functions.js"></script>
+  
+</body>
+
+</html>
